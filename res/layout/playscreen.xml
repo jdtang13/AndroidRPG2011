@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:orientation="vertical">
+    <LinearLayout android:layout_height="wrap_content" android:id="@+id/linLay1" android:layout_width="match_parent" android:layout_weight="10000000">
+        <com.id.GameView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/viewGame"></com.id.GameView>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/linLay2" android:layout_width="match_parent" android:layout_weight="1" android:orientation="horizontal" android:layout_height="50px">
+        <LinearLayout android:layout_height="match_parent" android:id="@+id/linLay3" android:layout_weight="1" android:layout_width="20px">
+            <ImageButton android:src="@drawable/button_left" android:layout_width="wrap_content" android:layout_height="40px" android:layout_gravity="right|center_vertical" android:id="@+id/leftButton"></ImageButton>
+        </LinearLayout>
+        <LinearLayout android:layout_height="match_parent" android:id="@+id/linLay4" android:orientation="vertical" android:layout_width="10px" android:layout_weight="1">
+            <ImageButton android:src="@drawable/button_up" android:layout_width="wrap_content" android:id="@+id/upButton" android:layout_height="25px"></ImageButton>
+            <ImageButton android:src="@drawable/button_down" android:layout_width="wrap_content" android:id="@+id/downButton" android:layout_height="25px"></ImageButton>
+        </LinearLayout>
+        <LinearLayout android:layout_height="match_parent" android:id="@+id/linLay5" android:layout_weight="1" android:layout_gravity="left|center_vertical" android:layout_width="20px">
+            <ImageButton android:src="@drawable/button_right" android:layout_width="wrap_content" android:layout_height="40px" android:layout_gravity="left|center_vertical" android:id="@+id/rightButton"></ImageButton>
+        </LinearLayout>
+        <LinearLayout android:layout_height="match_parent" android:id="@+id/linLay6" android:layout_width="wrap_content" android:layout_weight="1" android:orientation="vertical">
+            <TextView android:text="TextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom|center_horizontal" android:id="@+id/textViewLevel"></TextView>
+        </LinearLayout>
+        <LinearLayout android:layout_height="match_parent" android:id="@+id/linLay7" android:layout_weight="2" android:layout_width="50px">
+            <com.id.StatusBarsView android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/viewStatusBars"></com.id.StatusBarsView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
